@@ -1,0 +1,9 @@
+{
+  "name": "castledottech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vonWolfehaus/castledottech.git",
+  "author": "Corey Birnbaum <vonwolfehaus@gmail.com>",
+  "license": "NONE",
+  "private": true
+}
