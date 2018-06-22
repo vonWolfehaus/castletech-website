@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://castletechllc.com/sitemap.xml

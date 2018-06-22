@@ -1,9 +1,28 @@
 {
   "name": "castledottech",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build.js",
   "repository": "https://github.com/vonWolfehaus/castledottech.git",
   "author": "Corey Birnbaum <vonwolfehaus@gmail.com>",
   "license": "NONE",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "node metalsmith.js",
+    "dev": "metalsmith-start"
+  },
+  "dependencies": {
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-debug": "^1.2.0",
+    "metalsmith-discover-partials": "^0.1.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-multi-language": "^0.3.0",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-robots": "^1.1.0",
+    "metalsmith-sass": "^1.5.1",
+    "metalsmith-sitemap": "^1.2.0",
+    "metalsmith-start": "^2.0.1"
+  }
 }
