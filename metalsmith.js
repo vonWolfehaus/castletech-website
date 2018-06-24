@@ -24,7 +24,7 @@ var site = Metalsmith(__dirname)
 .destination('./docs')
 .clean(true)
 .use(ignore([
-	'**/index.lock'
+	'archive/**/*', 'layouts/**/*'
 ]))
 .use(multiLanguage({
 	default: 'en',
@@ -35,7 +35,7 @@ var site = Metalsmith(__dirname)
 	sourceMap: true,
 	sourceMapContents: true,
 	indentType: 'tab',
-	indentWidth: 1
+	indentWidth: 1,
 }))
 .use(markdown({
 	smartypants: true,
@@ -43,7 +43,9 @@ var site = Metalsmith(__dirname)
 	gfm: true
 }))
 .use(permalinks())
-.use(layouts())
+.use(layouts({
+	directory: './src/layouts'
+}))
 .use(discoverPartials({
 	directory: './src/layouts/partials',
 	pattern: /\.hbs$/

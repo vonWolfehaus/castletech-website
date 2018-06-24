@@ -8,12 +8,13 @@
   "private": true,
   "scripts": {
     "build": "node metalsmith.js",
-    "dev": "metalsmith-start"
+    "dev": "metalsmith-dev-server metalsmith.js --watch src --port 3000"
   },
   "dependencies": {
     "jstransformer-handlebars": "^1.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-debug": "^1.2.0",
+    "metalsmith-dev-server": "github:rstacruz/metalsmith-dev-server",
     "metalsmith-discover-partials": "^0.1.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-layouts": "^2.1.0",
@@ -22,7 +23,6 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-robots": "^1.1.0",
     "metalsmith-sass": "^1.5.1",
-    "metalsmith-sitemap": "^1.2.0",
-    "metalsmith-start": "^2.0.1"
+    "metalsmith-sitemap": "^1.2.0"
   }
 }
