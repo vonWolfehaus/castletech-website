@@ -34,6 +34,7 @@ section {
 }
 
 .page-footer{
+	padding-top: 20px;
 	text-align: center;
 }
 
@@ -54,8 +55,8 @@ section {
 
 #intro .mantra {
 	margin-top: 20px;
-	font-size: 1.5em;
-	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+	font-size: 20px;
+	// text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 header {
@@ -93,42 +94,13 @@ header .header-content .header-content-inner p {
 	color: rgba(0,0,0,.7);
 }
 
-@media (min-width: 768px) {
-	header {
-		min-height: 100%;
-		background-attachment: fixed;
-	}
-
-	header .header-content {
-		position: absolute;
-		top: 50%;
-		padding: 0;
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
-	header .header-content .header-content-inner {
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 1000px;
-	}
-
-	header .header-content .header-content-inner h1 {
-		font-size: 100px;
-	}
-
-	header .header-content .header-content-inner p {
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 80%;
-		font-size: 18px;
-	}
-}
-
 .section-heading {
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: 300;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 .nl-heading {
@@ -238,16 +210,6 @@ a.pure-menu-link:hover {
 	text-align: center;
 }
 
-@media (max-width: 768px) {
-	.navbar {
-		display: none;
-	}
-
-	.content {
-		padding: 0 20px;
-	}
-}
-
 ::-moz-selection{
 	text-shadow: none;
 	color: #fff;
@@ -282,4 +244,57 @@ img::-moz-selection{
 
 .spacer {
 	flex: 1;
+}
+
+
+@media (min-width: 768px) {
+	#intro .mantra {
+		font-size: 30px;
+	}
+
+	.section-heading {
+		font-size: 60px;
+	}
+
+	header {
+		min-height: 100%;
+		background-attachment: fixed;
+	}
+
+	header .header-content {
+		position: absolute;
+		top: 50%;
+		padding: 0;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	header .header-content .header-content-inner {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1000px;
+	}
+
+	header .header-content .header-content-inner h1 {
+		font-size: 100px;
+	}
+
+	header .header-content .header-content-inner p {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 80%;
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
+
+	.content {
+		padding: 0 20px;
+	}
 }
