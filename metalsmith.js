@@ -18,7 +18,7 @@ var url = "https://castletechllc.com"
 var site = Metalsmith(__dirname)
 .metadata({
 	company: "CastleTech LLC",
-	description: "Humane technology for high-density housing.",
+	description: "Humane Technology for Urban Living",
 	url: url
 })
 .destination('./docs')
