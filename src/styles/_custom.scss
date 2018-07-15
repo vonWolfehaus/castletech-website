@@ -73,7 +73,7 @@ header {
 	-o-background-size: cover;
 }
 
-header .header-content{
+header .header-content {
 	position: relative;
 	width: 100%;
 	padding-top: 100px;
@@ -81,7 +81,14 @@ header .header-content{
 	text-align: center;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-bg {
+	width: 600px;
+	height: 600px;
+	background: rgba($color: #fff, $alpha: 0.7);
+	border-radius: 50%;
+}
+
+header .header-content h1 {
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-size: 50px;
@@ -89,8 +96,7 @@ header .header-content .header-content-inner h1 {
 	text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
 }
 
-header .header-content .header-content-inner p {
-	margin-bottom: 50px;
+header .header-content p {
 	font-size: 16px;
 	font-weight: 300;
 	color: rgba(0,0,0,.7);
@@ -274,17 +280,21 @@ img::-moz-selection{
 		transform: translateY(-50%);
 	}
 
-	header .header-content .header-content-inner {
+	header .header-content .header-bg {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
 		margin-right: auto;
 		margin-left: auto;
 		max-width: 1000px;
 	}
 
-	header .header-content .header-content-inner h1 {
+	header .header-content h1 {
 		font-size: 100px;
 	}
 
-	header .header-content .header-content-inner p {
+	header .header-content p {
 		margin-right: auto;
 		margin-left: auto;
 		max-width: 80%;
