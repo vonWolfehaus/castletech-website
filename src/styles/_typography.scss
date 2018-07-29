@@ -1,0 +1,25 @@
+@import 'variables';
+
+a {
+	color: $color-primary;
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s;
+}
+
+a:hover,
+a:focus {
+	color: $color-secondary;
+}
+
+.type-italic {
+    font-style: italic;
+}
+
+.type-light {
+    font-weight: 300;
+}
+
+.type-bold {
+    font-weight: 600;
+}
