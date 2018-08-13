@@ -10,7 +10,8 @@ var sass = require('metalsmith-sass') // https://github.com/stevenschobert/metal
 var ignore = require('metalsmith-ignore') // https://www.npmjs.com/package/metalsmith-debug
 var debug = require('metalsmith-debug') // https://www.npmjs.com/package/metalsmith-debug
 var multiLanguage = require('metalsmith-multi-language') // https://github.com/doup/metalsmith-multi-language
-var path = require('path')
+var uglify = require('metalsmith-uglify')
+// var path = require('path')
 
 // can use a starter kit if we need to get complicated: https://github.com/evocode/metalsmith-base
 var url = "https://castletechllc.com"
@@ -50,6 +51,7 @@ var site = Metalsmith(__dirname)
 	directory: './src/layouts/partials',
 	pattern: /\.hbs$/
 }))
+.use(uglify())
 .use(sitemap({
 	hostname: url
 }))
