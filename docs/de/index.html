@@ -14,12 +14,14 @@
 	<div class="navbar">
 		<div class="navbar-inner pure-menu pure-menu-horizontal" id="menu">
 			<div class="brand">
+				<img src="/images/logo.png"/>
 				CastleTech LLC
 			</div>
 			<div class="spacer"></div>
 			<ul id="navlist" class="pure-menu-list">
 				<li class="pure-menu-item active"><a href="#intro" class="pure-menu-link">Home</a></li>
 				<li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+				<li class="pure-menu-item"><a href="#neighborlink" class="pure-menu-link">Neighborlink</a></li>
 			</ul>
 		</div>
 	</div>
@@ -27,8 +29,9 @@
 
 	<header id="intro">
 		<div class="header-content">
-				<h1>CastleTech</h1>
-				<p class="mantra">Humane Technology for Urban Living</p>
+			<img class="intro-logo" src="/images/logo.png"/>
+			<h1>CastleTech</h1>
+			<p class="mantra">Humane Technology for Urban Living</p>
 		</div>
 	</header>
 
@@ -45,12 +48,32 @@
 		</div>
 	</section>
 
+	<section id="neighborlink">
+		<div class="parallax-window" data-parallax="scroll" data-image-src="/images/neighborlink-bg.jpg">
+			<img class="nl-logo" src="/images/nl-logo-full.png"/>
+		</div>
+	</section>
 
+	<section class="auto-height">
+		<div class="content">
+			<p class="lead text-muted">Our flagship product provides the platform required for the smooth operation of high-density housing projects such as apartments, condos, and other Common Interest Developments. It's a system designed to facilitate easy collaboration amongst residents, as well as bringing transparency to the entire community regardless if it's self-governing or if there are third-party managers.</p>
+			<p>Going beyond property management, it's the neighborly app for bringing your community together.</p>
+			<a href="https://www.neighborlink.app" class="pure-button">
+				Learn more
+				<svg class="learn-more-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 31.49 31.49" xml:space="preserve">
+					<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" fill="#FFFFFF"/>
+				</svg>
+			</a>
+		</div>
+	</section>
 
 
 	<footer class="page-footer">
 		<div class="small-print">
 			<div class="container">
+				<p><a href="mailto:hello@castletechllc.com">hello@castletechllc.com</a></p>
+				<p>113 Cherry St Suite 91748
+				<br/>Seattle, WA 98104</p>
 				<p>&copy; <span id="copy-year">2018</span> CastleTech LLC</p>
 			</div>
 		</div>
@@ -58,6 +81,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="/scripts/jquery.nav.min.js"></script>
+	<script src="/scripts/parallax.min.js"></script>
 	<script src="/scripts/custom.min.js"></script>
 </body>
 </html>

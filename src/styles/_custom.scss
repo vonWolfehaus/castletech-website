@@ -70,6 +70,11 @@ header .header-content {
 	text-align: center;
 }
 
+.intro-logo {
+	width: 100px;
+	height: auto;
+}
+
 header .header-bg {
 	width: 600px;
 	height: 600px;
@@ -99,12 +104,6 @@ header .header-content p {
 	&:first-child {
 		margin-top: 0;
 	}
-}
-
-.nl-heading {
-	font-size: 60px;
-	color: white;
-	font-weight: 300;
 }
 
 .dark {
@@ -143,6 +142,17 @@ header .header-content p {
 		align-items: center;
 		transition: all .35s;
 	}
+
+	.brand > img {
+		opacity: 0;
+		width: 32px;
+		height: auto;
+		margin-right: 15px;
+		-webkit-transition: all .35s;
+		-moz-transition: all .35s;
+		transition: all .35s;
+	}
+
 	.brand,
 	.brand a {
 		text-decoration: none;
@@ -155,6 +165,11 @@ header .header-content p {
 		background-color: #fff;
 		border-bottom: none;
 		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+
+		.brand > img {
+			opacity: 1;
+			margin-right: 8px;
+		}
 
 		.brand,
 		.brand a {
@@ -204,8 +219,15 @@ a.pure-menu-link:hover {
 .parallax-window {
 	display: flex;
 	flex-direction: column;
-	height: 500px;
-	text-align: center;
+	height: 300px;
+	width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nl-logo {
+	height: 60px;
+	width: auto;
 }
 
 ::-moz-selection{
@@ -267,6 +289,10 @@ img::-moz-selection{
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
+	}
+
+	.intro-logo {
+		width: 200px;
 	}
 
 	header .header-content .header-bg {
