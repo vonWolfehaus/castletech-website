@@ -45,4 +45,5 @@ $(document).ready(function() {
 		ready = false
 	}
 	window.addEventListener('scroll', requestTick)
+	update()
 })
