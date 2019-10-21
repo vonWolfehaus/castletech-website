@@ -3,7 +3,7 @@ Author: Corey Birnbaum
 Copyright 2018 CastleTech LLC
 Licensed under the MIT License
 */
-$('#copy-year').text(function(i, content) {
+$('#copy-year').text(function() {
 	return '2018 - ' + (new Date).getFullYear()
 })
 

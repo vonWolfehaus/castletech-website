@@ -20,6 +20,7 @@ section {
     flex-direction: column;
     justify-content: center;
 	text-align: center;
+	overflow: hidden;
 }
 
 .page-footer {
@@ -217,10 +218,11 @@ a.pure-menu-link:hover {
 .parallax-window {
 	display: flex;
 	flex-direction: column;
-	height: 300px;
 	width: 1200px;
+	height: 300px;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	background: transparent;
 }
 
 .nl-logo {
